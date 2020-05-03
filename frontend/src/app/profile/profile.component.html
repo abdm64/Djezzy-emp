@@ -1,0 +1,101 @@
+<div class="home-container">
+  <!--Top 'main' section-->
+  <div class="container"
+    fxLayout
+    fxLayout.xs="column"
+    fxLayoutAlign="center"
+    fxLayoutGap="10px"
+    fxLayoutGap.xs="0">
+
+    <!--Top 'main' section lhs-->
+    <div class="item-1" fxFlex="20%">
+      <img class="main-img" src="/assets/images/laptop-desk.jpg" alt="photo of Profile">
+      <div>
+        <div style="position: relative;">
+          
+          <h2 class="main-heading">
+            Abdellah  Messelleka</h2>
+            <button mat-button  style = "position: absolute;right: -40px;top: 0px;"> <mat-icon color="accent" >
+              edit
+            </mat-icon> </button>
+        </div>
+      
+        <h3 class="main-subheading">Programming, Engineering & IT</h3>
+
+      </div>
+    
+    </div>
+
+    <!--Top 'about' section rhs-->
+    <div class="item-2" fxFlex="70%" fxFlexOrder="2">
+
+      <h2 class="about-heading">
+        <mat-icon color="accent" class="about-title-avatar">
+          face
+        </mat-icon>About
+        <button mat-button  (click)= "onEditAboutClicked(about)"> <mat-icon color="accent" >
+          edit
+        </mat-icon> </button>
+
+      </h2>
+      <p class="about-para" [hidden]= 'editedText' id = "about">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate exercitationem, voluptates saepe rem illo aspernatur veniam reiciendis amet odit quibusdam nesciunt praesentium iste non sapiente a sequi, officia hic iure!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est a placeat voluptatem? Magnam, pariatur optio asperiores, sapiente sed eveniet deserunt provident atque repudiandae voluptate, impedit quidem. Consequatur porro maiores obcaecati.
+      </p>
+      <div  [hidden]= 'editedField' class="about-para" >
+        <mat-form-field style="width: 80%; margin-bottom: 1rem; " >
+          <mat-label> Edit About</mat-label>
+          <textarea autosize matInput placeholder  [minRows]="10" [maxRows]="15" [(ngModel)]='about' id = "textAbout" ></textarea>
+        </mat-form-field>
+        <!-- <button mat-button style="color: white;background-color: #E2001A;" (click)="editAbout(about)" >Edit</button> -->
+        <div>
+          <button mat-button style="color: white;background-color: #E2001A; margin-top: 1rem;" (click)="editAbout(about)" >Edit</button>
+
+         </div>
+
+      </div>
+
+
+    </div><!--end of item 2-->
+  </div><!--end of top container-->
+
+  <ng-container >
+
+    <div class="separation"></div>
+</ng-container>
+
+
+
+
+  <div fxLayout="row wrap" style="margin-top: 1rem">
+    <div
+      *ngFor="let area of areas"
+      fxFlex="25"
+      fxFlex.md="33"
+      fxFlex.sm="50"
+      fxFlex.xs="100"
+      fxLayout="column"
+      style="padding: 10px;"
+    >
+
+      <mat-card style="box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);">
+        <mat-card-content style="margin-top: 1rem;position: relative;margin-bottom: 1rem;">
+          <p class="card-eng">
+            {{ area.title }}
+            <button mat-button (click)= "onEditClicked(area)"><mat-icon>edit</mat-icon></button>
+            <button mat-button (click)= "onDeleteClicked(area)" style = "position: absolute;right: 0px;bottom: -1rem;" ><mat-icon>delete</mat-icon></button>
+          </p>
+          <p class="content-style">{{ area.content }}</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+
+</div>
+<div>
+
+  <button mat-button class ="addbtn" (click) = onAddClicked()><mat-icon>add</mat-icon></button>
+</div>
+
+
+

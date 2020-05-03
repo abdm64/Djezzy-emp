@@ -1,0 +1,24 @@
+// Notes on the Top Navbar classes:
+//
+// 1. top-nav-links are white but links to external 'social' github and linkedin websites are grey.
+//
+// 2. An active link is pink - good contrast with grey background.
+
+mat-icon {
+  padding: 0 4px;
+}
+
+.top-nav-link {
+  color: white;
+  font-size: 14px;
+}
+
+.top-link-social {
+  padding: 0 16px;
+  font-size: 14px;
+  color: white;
+}
+
+.top-link-active {
+  color:whitesmoke;
+}

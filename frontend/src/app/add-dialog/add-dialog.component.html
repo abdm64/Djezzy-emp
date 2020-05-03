@@ -1,0 +1,47 @@
+<!-- <mat-card style="box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);" >
+  <mat-card-title> Add New Skills</mat-card-title>
+  <mat-card-content style="margin-top: 1rem;">
+    <mat-form-field class = "title-form" >
+      <mat-label>tilte</mat-label>
+      <input matInput placeholder [(ngModel)]='data.title' >
+    </mat-form-field>
+    <mat-form-field  >
+      <mat-label>description</mat-label>
+      <textarea autosize matInput placeholder [(ngModel)]='data.content' [minRows]="10" [maxRows]="16"  ></textarea>
+    </mat-form-field>
+
+  </mat-card-content>
+
+  <mat-card-actions fxFlexAlign="end" align="end">
+
+
+    <button mat-button class = "save-btn" (click)="onSaveClicked()">
+        Save
+    </button>
+</mat-card-actions>
+
+
+</mat-card> -->
+
+<div class = "div-card">
+
+  <h1 mat-dialog-title>Add new Skills</h1>
+  <div mat-dialog-content>
+   
+    <mat-form-field class = "title-form" >
+      <mat-label>tilte</mat-label>
+      <input matInput placeholder [(ngModel)]='data.title' >
+    </mat-form-field>
+    <mat-form-field  >
+      <mat-label>description</mat-label>
+      <textarea autosize matInput placeholder [(ngModel)]='data.content' [minRows]="10" [maxRows]="16"  ></textarea>
+    </mat-form-field>
+  
+  
+  </div>
+  <div mat-dialog-actions>
+    <button mat-button class = "save-btn" (click)="onSaveClicked()">
+      Save
+  </button>
+  
+  </div>

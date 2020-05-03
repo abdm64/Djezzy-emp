@@ -1,0 +1,108 @@
+@import '../../styles.scss';
+
+mat-form-field {
+  display: block;
+}
+
+mat-card {
+  margin: 16px;
+  padding: 8px;
+}
+
+mat-card-actions {
+  margin: auto;
+  padding: 8px 0 !important;
+}
+
+p {
+  color: #455A64;
+  margin: 0 0 8px;
+}
+
+p .success-message {
+  color: #455A64;
+  margin: 0 0 16px;
+}
+
+textarea {
+  min-height: 130px;
+}
+
+.contact-heading {
+  text-align: center;
+  color: #0D47A1;
+  margin: 0px auto 0 auto;
+  text-decoration: underline;
+  text-decoration-color: rgb(245, 200, 241);
+}
+
+.contact-button {
+  text-align: center;
+  margin: auto;
+}
+
+.title-icon {
+  transform: scale(1.5);
+  padding-right: 8px;
+}
+
+.photo-credit {
+  text-align: center;
+  color: #0D47A1;
+  margin: 8px auto 0 auto;
+}
+
+.img-thumbnail {
+  display: block;
+  width: 60%;
+  height: auto;
+  margin: 16px auto;
+  position: center;
+  border-radius: 50%;
+}
+
+.horiz-line {
+  margin: 1em;
+  border: 2px solid rgb(245, 200, 241)
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-container > * {
+  width: 100%;
+}
+
+.thanks-card {
+  position: center;
+  margin: 16px auto;
+  text-align: center;
+  padding: 16px;
+}
+
+.success-div {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-another-button {
+  position: center;
+  text-align: center;
+  padding: 16px 16px 4px 16px;
+  border: 1px solid rgb(245, 200, 241) !important;
+  width: 60%;
+}
+
+.success-icon {
+  color: green;
+}
+
+.contact-sent-icon {
+  text-align: center;
+  color: #0D47A1;
+  transform: scale(2);
+}

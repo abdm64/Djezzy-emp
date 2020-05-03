@@ -1,0 +1,32 @@
+
+<div class = "div-card">
+
+  <h1 mat-dialog-title>Edit</h1>
+  <div mat-dialog-content>
+   
+    <mat-form-field class = "title-form" >
+      <mat-label>tilte</mat-label>
+      <input matInput placeholder [(ngModel)]='data.title' >
+    </mat-form-field>
+    <mat-form-field  >
+      <mat-label>description</mat-label>
+      <textarea autosize matInput placeholder [(ngModel)]='data.content' [minRows]="10" [maxRows]="16"  ></textarea>
+    </mat-form-field>
+  
+  
+  </div>
+  <div mat-dialog-actions>
+    <button mat-button class = "save-btn" (click)="onSaveClicked()">
+      Save
+  </button>
+  
+  </div>
+  
+
+
+</div>
+
+
+
+
+

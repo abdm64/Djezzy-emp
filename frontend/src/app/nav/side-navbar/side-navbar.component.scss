@@ -1,0 +1,22 @@
+// Notes on the Side Navbar classes:
+//
+// 1. All side-nav-links are grey - good contrast with white background.
+//
+// 2. An active link is purple-brown - good contrast with white background.
+
+mat-icon {
+  padding: 0 8px;
+}
+
+.side-nav-link {
+  color: grey;
+}
+
+.side-link-social {
+  padding: 16px 0;
+}
+
+.side-link-active {
+  color: #E2001A;
+  font-weight: bold;
+}

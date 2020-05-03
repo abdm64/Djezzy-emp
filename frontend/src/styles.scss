@@ -1,0 +1,16 @@
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.mat-card-header-text {
+  width: 100% !important;
+}
+
+// common horiz line
+.horiz-line {
+  margin: 1em;
+  border: 2px solid rgb(245, 200, 241);
+}
+::-webkit-scrollbar {
+  width: 0px;
+  visibility: hidden;
+  visibility: collapse;
+}
